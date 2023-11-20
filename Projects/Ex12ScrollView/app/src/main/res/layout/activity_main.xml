@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scroll 기능을 가진 ViewGropup 을 사용    -->
+    <!-- 1. 스크롤 뷰 안에는 오직 1개의 뷰만 위치할 수 있음.   -->
+    <!-- 만약 여러개의 뷰를 배치하고자 한다면. 레이아웃을 이용   -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <!-- 안에있는 뷰는 무조건 높이가 wrap_content 임       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#FFFF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#FF00FF00" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#FF0000ff"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 가로스크롤이 가능한 뷰는 별도로 존재   -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#FFFF0000"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#FF00FF00"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="#FF0000ff"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- 상하좌우 모두 스크롤 되려면.. 중첩 스크롤로 만드렁야 함   -->
+    <ScrollView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg"/>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "806753807808",
+    "project_id": "placesearchbykakaonsw2022",
+    "storage_bucket": "placesearchbykakaonsw2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806753807808:android:50b5c18b0fb594b6e26c25",
+        "android_client_info": {
+          "package_name": "com.nsw2022.tpqucikplacebykakaosearchapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806753807808-u53rqfomdij6iqkn0adgaqn32mo0k7av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nsw2022.tpqucikplacebykakaosearchapi",
+            "certificate_hash": "1750c6b8eda9c8bd9b77d175a17efc13b6eca655"
+          }
+        },
+        {
+          "client_id": "806753807808-cdimmi4ijt0tse0hcidgd0sj8n40qg7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrvFs2RyOSVUENjVm2gcAZDcFZ7N1J0Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806753807808-cdimmi4ijt0tse0hcidgd0sj8n40qg7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

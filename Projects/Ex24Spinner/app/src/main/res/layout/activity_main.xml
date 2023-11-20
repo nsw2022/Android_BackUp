@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/city"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/spinner_title"/>
+    <!-- prompt속성은 spinnerMode가 dialog일때만 동작함 -->
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_spinner"/>
+    <!-- background를 주면 기존 삼각형모양 아이콘이 없어짐. -->
+
+</RelativeLayout>

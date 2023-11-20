@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 탭버튼 같은 역할의 버튼들 배치   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_kor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOREA"
+            android:layout_margin="2dp"/>
+        <Button
+            android:id="@+id/btn_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHINA"
+            android:layout_margin="2dp"/>
+        <Button
+            android:id="@+id/btn_jap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAPAN"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 첫번째 프레임       -->
+        <LinearLayout
+            android:id="@+id/layout_korea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/flag_korea"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대한민국"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+
+        <!-- 두번재 프레임   -->
+        <RelativeLayout
+            android:id="@+id/layout_japan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAPAN"
+                android:textStyle="bold"
+                android:textColor="#FF0000FF"
+                android:textSize="30sp"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/flag_japan"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <!-- 세번째 프레임   -->
+        <RelativeLayout
+            android:id="@+id/layout_china"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flag_china"
+                android:layout_centerVertical="true"
+                android:layout_margin="40dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

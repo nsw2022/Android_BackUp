@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_aa"
+        android:title="share"
+        android:icon="@drawable/ic_action_share"/>
+
+    <item android:id="@+id/menu_bb"
+        android:title="map"
+        android:icon="@drawable/ic_action_map"/>
+
+    <item android:id="@+id/menu_cc"
+        android:title="carlendar"
+        android:icon="@drawable/ic_action_calendar"/>
+
+    <!-- 액션모드에서는 app:showAsAction="always" 안해도 무조건 icon모양만 됨   -->
+    <!-- 액션모드에서는 app:showAsAction="never" 안됨   -->
+</menu>

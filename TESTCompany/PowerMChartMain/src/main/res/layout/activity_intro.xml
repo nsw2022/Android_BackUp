@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/intro_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60B2CCFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Tv_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Power Graphics"
+        android:textColor="#4374D9"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ImgVw_AppIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/Linear_Chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Multi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_startactivity_selector"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="종합차트"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Btn_Compare"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_startactivity_selector"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="비교차트"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tv_PowerGraphics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_round_startactivity_selector"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="PowerGriphics"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal" />
+
+    <ListView
+        android:id="@+id/Lv_Graphics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#A2A2A2"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/Linear_Bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:id="@+id/ImgVw_CompanyLogo"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_ico_company_logo"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/Tv_CompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="주식회사 차트연구소"
+            android:textColor="#8C8C8C"
+            android:textSize="16sp"
+            android:textStyle="bold" />-
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_Bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_ChartInfoInit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_round_startactivity_selector"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="ChartInfo초기화"
+            android:textColor="#FFFFFF"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/Tv_CopyRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="right"
+            android:text="CopyRightⓒ 2020 ChartLab Co,LTD All rights reserved."
+            android:textColor="#8C8C8C"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

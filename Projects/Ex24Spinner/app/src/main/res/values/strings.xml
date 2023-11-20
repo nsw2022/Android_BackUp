@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ex24Spinner</string>
+
+    <string name="spinner_title">도시 선택</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="si">
+        <item>도시를 선택하세요</item>
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>인천광역시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>구를 선택하세요</item>
+        <item>전체</item>
+
+    </string-array>
+
+    <string-array name="seoul_gu">
+        <item>구를 선택하세요</item>
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>동작구</item>
+        <item>강서구</item>
+        <item>마포구</item>
+    </string-array>
+
+    <string-array name="busan_gu">
+        <item>동래구</item>
+        <item>수영구</item>
+        <item>해운대구</item>
+        <item>부산진구</item>
+    </string-array>
+
+    <string-array name="in_gu">
+        <item>중구</item>
+        <item>남동구</item>
+        <item>연수구</item>
+        <item>부평구</item>
+        <item>서구</item>
+    </string-array>
+
+    <string-array name="gyeonggi_gu">
+        <item>광주</item>
+        <item>수원</item>
+        <item>안산</item>
+        <item>화성</item>
+    </string-array>
+
+    <string-array name="gangwon_gu">
+        <item>철원</item>
+        <item>춘천</item>
+        <item>양구</item>
+        <item>인제</item>
+    </string-array>
+
+    <string-array name="seoul">
+        <item>서울특별시</item>
+    </string-array>
+
+    <string-array name="busan">
+        <item>부산광역시</item>
+    </string-array>
+
+    <string-array name="in">
+        <item>인천광역시</item>
+    </string-array>
+
+
+    <string-array name="gyeonggi">
+        <item>경기도</item>
+    </string-array>
+
+    <string-array name="gangwon">
+        <item>강원도</item>
+    </string-array>
+
+
+
+</resources>

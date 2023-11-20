@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- String 배열 만들기   -->
+    <string-array name="datas">
+        <item>서울특별시</item>
+        <item>부산광역시</item>
+        <item>인천특별시</item>
+        <item>대전광역시</item>
+        <item>세종특별시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>서울특별시</item>
+        <item>부산특별시</item>
+        <item>인천특별시</item>
+        <item>대전광역시</item>
+        <item>세종특별시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>서울특별시</item>
+        <item>부산특별시</item>
+        <item>인천특별시</item>
+        <item>대전광역시</item>
+        <item>세종특별시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+
+
+    </string-array>
+
+</resources>

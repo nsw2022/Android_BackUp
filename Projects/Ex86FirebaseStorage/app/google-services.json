@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071108789260",
+    "project_id": "ex86firestoragensw2022",
+    "storage_bucket": "ex86firestoragensw2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071108789260:android:1a8337ecc5832f059e4a29",
+        "android_client_info": {
+          "package_name": "com.nsw2022.ex86firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071108789260-6h0vrrmc3g352ino1doml1r4r1uht8kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjuioc3aSR3xba8wVuU_zQcV86wMhe2A0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071108789260-6h0vrrmc3g352ino1doml1r4r1uht8kd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

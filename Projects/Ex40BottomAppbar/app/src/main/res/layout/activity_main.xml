@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 콘텐츠 영역 - 스크롤이 가능한 뷰 중 NestedScrollView, RecyclerView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FFFF0000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF00FF00"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#FF0000FF"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/purple_500"
+        app:fabAlignmentMode="center"
+        app:fabAnimationMode="slide"
+        app:hideOnScroll="true"
+        app:fabCradleVerticalOffset="0dp"
+        app:fabCradleMargin="20dp"
+        app:fabCradleRoundedCornerRadius="16dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bab"
+        android:src="@drawable/ic_baseline_shopping_cart_24"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

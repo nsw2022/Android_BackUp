@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sydney" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_img"
+        android:numStars="1"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#FFEB3B"
+        android:rating="0.2"
+        android:stepSize="0.2"/>
+
+    <TextView
+        android:id="@+id/tv_scoreint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.8"
+        android:layout_below="@+id/iv_img"
+        android:layout_toRightOf="@+id/ratingbar"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(평점)"
+        android:layout_below="@+id/iv_img"
+        android:layout_toRightOf="@+id/tv_scoreint"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbar"
+        android:layout_alignLeft="@+id/ratingbar"
+        android:text="10,000"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+
+
+
+</RelativeLayout>

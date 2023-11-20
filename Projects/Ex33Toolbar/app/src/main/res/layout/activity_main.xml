@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 기존 Actionbar가 마음에 들지 않아서 없애고(테마에서 제거)   -->
+    <!-- 이를 대체하는 Toolbar 배치하여 꾸미기   -->
+    <!-- ActionBar를 대체하겠다고 java에서 코드로 반드시 지정해야 제목줄을 대체함   -->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/purple_500"-->
+<!--        app:titleTextColor="@color/white"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+    <!-- 제목글씨를 가운데 배치해보기   -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:textStyle="bold"
+            android:textColor="#ff111111"
+            android:layout_gravity="center"
+            android:textSize="24sp"/>
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</RelativeLayout>

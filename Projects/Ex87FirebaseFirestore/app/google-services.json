@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593056170855",
+    "project_id": "ex87firestorensw2022",
+    "storage_bucket": "ex87firestorensw2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593056170855:android:b712f08624345c11bce5c2",
+        "android_client_info": {
+          "package_name": "com.nsw2022.ex87firebasefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593056170855-qeqfte93d7f068qj8vscfnog19ucej7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw3DHZP6ERjg2vzFaiUJghj5qkgvUB77I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593056170855-qeqfte93d7f068qj8vscfnog19ucej7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

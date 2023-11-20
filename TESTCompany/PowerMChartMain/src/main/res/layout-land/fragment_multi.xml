@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/PowerMChart_Root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Relative_TopBar1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ImgVw_TopBar_TaskBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/button_default_toggle_off_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_button_taskbar" />
+
+        <chartlab.PowerMChartApp.Widget.IconListBox.IconListBox
+            android:id="@+id/Icon_TopBar_CodeCtrl"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/ImgVw_TopBar_TaskBar" />
+
+        <LinearLayout
+            android:id="@+id/Linear_TopBar_PriceInfo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/Icon_TopBar_CodeCtrl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Tv_TopBar_CurPrice"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:gravity="right"
+                    android:text="1,450,000"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/Tv_TopBar_Vol"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:gravity="right"
+                    android:text="574,784"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Tv_TopBar_Diff"
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:gravity="right"
+                    android:text="▲22,000"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/Tv_TopBar_Ratio"
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:gravity="right"
+                    android:text="1.51%"
+                    android:textColor="#FF0000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear_TopBar_Period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Linear_TopBar_PriceInfo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp">
+
+            <ToggleButton
+                android:id="@+id/Btn_TopBar_PrdDay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_period_left_selector"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="#FFFFFF"
+                android:textOff="일"
+                android:textOn="일"
+                android:textSize="14sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TopBar_PrdWeek"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_period_mid_selector"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="#FFFFFF"
+                android:textOff="주"
+                android:textOn="주"
+                android:textSize="14sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TopBar_PrdMonth"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/button_period_mid_selector"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="#FFFFFF"
+                android:textOff="월"
+                android:textOn="월"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp">
+                <ToggleButton
+                    android:id="@+id/Btn_TopBar_PrdMinute"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_period_mid_selector"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_centerVertical="true"
+                    android:textColor="#FFFFFF"
+                    android:textOff="1분"
+                    android:textOn="1분"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:src="@drawable/img_ico_button_bottom_tag" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp">
+
+                <ToggleButton
+                    android:id="@+id/Btn_TopBar_PrdTick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_period_right_selector"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:textOff="1틱"
+                    android:textOn="1틱"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:src="@drawable/img_ico_button_bottom_tag" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/Btn_TopBar_CrossHair"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/Icon_TopBar_FrameType"
+            android:background="@drawable/button_default_selector"
+            android:contentDescription="@drawable/img_button_cross"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_button_cross" />
+
+        <chartlab.PowerMChartApp.Widget.IconListBox.IconListBox
+            android:id="@+id/Icon_TopBar_FrameType"
+            android:layout_width="52dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/Btn_TopBar_ChartSync" />
+
+        <ImageButton
+            android:id="@+id/Btn_TopBar_ChartSync"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/Btn_TopBar_LandInitSaveTool"
+            android:background="@drawable/button_default_selector"
+            android:contentDescription="@drawable/button_sync_normal"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_sync_normal" />
+
+        <ImageButton
+            android:id="@+id/Btn_TopBar_LandInitSaveTool"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/ImgVw_TopBar_ToolBar"
+            android:background="@drawable/button_default_selector"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_tool_normal"
+            android:text="기능버튼" />
+
+        <ImageView
+            android:id="@+id/ImgVw_TopBar_ToolBar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_default_toggle_off_selector"
+            android:clickable="true"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_button_tookbar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/Linear_TabBar"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff">
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_1"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_2"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_3"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_4"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_5"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/Btn_TabBar_6"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_tab_bottom_selector"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/Linear_TabBar"
+            android:background="#FFFFFF"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/Linear_Chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#FFFFFF" />
+        </RelativeLayout>
+
+
+        <chartlab.PowerMChartApp.ToolBar.TaskBarLinearLayout
+            android:id="@+id/Linear_TaskBar"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:background="@drawable/bg_taskbar_left" />
+
+        <chartlab.PowerMChartApp.ToolBar.ToolBarLinearLayout
+            android:id="@+id/Linear_ToolBar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/Linear_TabBar"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:background="@drawable/bg_taskbar_right"/>
+    </RelativeLayout>
+</LinearLayout>

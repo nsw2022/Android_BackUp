@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#9CEFF6"
+    >
+
+    <!-- 뷰크기, 글씨, 글씨크기, 글씨색상, 글씨스타일, 배경색, 패딩, 마진   -->
+    <!-- 단위 - 뷰 크기는:dp, 글씨크기:sp , 색상 : ARGB-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Wold!"
+        android:textSize="30sp"
+        android:textColor="#FF0000FF"
+        android:textStyle="bold|italic"
+        android:background="#FFFFFF00"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <!-- visvility : visible, invisible, gone -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+
+
+    <!-- 배경이미지  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ms_05"
+        />
+
+    <!-- view안의  Contenet의 정렬 : gravity -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gravity"
+        android:gravity="right"
+        android:padding="8dp"
+        android:background="#FFFFFFFF"
+        />
+
+        <!-- View 자체의 정렬 - 단, Layout 의 종류에 따라 방법 다름 -->
+        <!-- LinearLayout 안에서의 정렬 - layout_gravity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NICE"
+            android:background="#FF00FF00"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <!-- outolink 속성 하이퍼링크, 글씨 서체 - typeface -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.naver.com"
+        android:autoLink="web"
+        android:typeface="serif"
+        />
+
+    <!-- 폰트 설정 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice to meet you"
+        android:textSize="24sp"
+        android:textColor="#FF000000"
+        android:fontFamily="@font/dalseo"
+        />
+
+    <!-- 글씨 문자열을 별도의 res 에 작성하고 불러서 사용 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_text"
+        android:textColor="@color/black"
+        />
+
+
+  </LinearLayout>

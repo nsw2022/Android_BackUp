@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642461736986",
+    "project_id": "ex88firechattingnsw2022",
+    "storage_bucket": "ex88firechattingnsw2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642461736986:android:85348064fdb947796bb1a3",
+        "android_client_info": {
+          "package_name": "com.nsw2022.ex88firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642461736986-47infr154n72hmf0nnccal43mgdj6o5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhZtAmmwwU_LGgin2IIwbzviwsms0Ausk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642461736986-47infr154n72hmf0nnccal43mgdj6o5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- input typype  : 소프트 키보드의 모양을 정하는 속성 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input type"
+        android:textColorHint="#FFFF0000"
+        android:inputType="text"/>
+
+    <!-- 여러줄 입력할 때 라인수를 정하는 속성1 : Lines-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="lines"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top"/>
+
+
+
+    <!-- 여러줄 입력할 때 라인수를 정하는 속성2 : maxLines-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Maxlines"
+        android:inputType="textMultiLine"
+        android:maxLines="3"/>
+
+    <!-- EditText의 너비를 글자수 만하게..  ems속성  -->
+    <!-- 최대 입력가능 글자수 : maxLength   -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:maxLength="5"
+        android:gravity="center"/>
+
+    <!-- EditText의 배경을 변경  -->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:hint="글 입력"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:background="@drawable/bg_select_edit"
+        android:padding="8dp"
+        android:cursorVisible="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+       <EditText
+        android:id="@+id/et01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:background="@drawable/bg_edit"
+        android:padding="8dp"
+        android:hint="010"
+        android:gravity="center"
+        android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/et02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:maxLength="4"
+            android:background="@drawable/bg_edit"
+            android:padding="8dp"
+            android:hint="1234"
+            android:gravity="center"
+            android:inputType="phone"
+            android:layout_marginLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/et03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:maxLength="4"
+            android:background="@drawable/bg_edit"
+            android:padding="8dp"
+            android:hint="5678"
+            android:gravity="center"
+            android:inputType="phone"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <!-- EditText안에 아이콘 표시 가능   -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="icon"
+        android:inputType="text"
+        android:drawableRight="@drawable/ic_baseline_favorite_24" />
+
+
+</LinearLayout>

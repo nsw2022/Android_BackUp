@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/top_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/top_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/btn_strat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_start" />
+
+    <ImageView
+        android:id="@+id/a_monkey"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/top_left"
+        android:src="@drawable/a_monkey" />
+
+    <ImageView
+        android:id="@+id/a_pig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/a_monkey"
+        android:layout_centerInParent="true"
+        android:src="@drawable/a_pig" />
+
+    <ImageView
+        android:id="@+id/a_frog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/top_right"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/a_frog" />
+
+    <ImageView
+        android:id="@+id/a_ele"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/b_ele"
+
+        android:src="@drawable/a_ele" />
+
+    <ImageView
+        android:id="@+id/a_lion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/b_ele"
+        android:layout_alignRight="@+id/b_ele"
+        android:src="@drawable/a_lion" />
+
+
+    <ImageView
+        android:id="@+id/b_ele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_ele" />
+    <ImageView
+        android:id="@+id/b_frog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_frog" />
+    <ImageView
+        android:id="@+id/b_lion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_lion" />
+    <ImageView
+        android:id="@+id/b_monkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_monkey" />
+
+    <ImageView
+        android:id="@+id/b_pig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_pig" />
+
+
+    <ImageView
+        android:id="@+id/good"
+        android:layout_width="151dp"
+        android:layout_height="147dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/result_good"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/bad"
+        android:layout_width="151dp"
+        android:layout_height="147dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/result_bad"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/b_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/q_board" />
+
+
+
+</RelativeLayout>

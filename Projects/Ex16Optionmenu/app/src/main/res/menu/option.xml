@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Serach"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"/>
+    <!-- image asset 으로 만든 아이콘은 alpha 값이 적용되어 있어서 색상이 잘 표현되지 않음. - 직접 파일에서 alpha 값 수정-->
+
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="Add"
+        android:icon="@drawable/ic_action_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_help"
+        android:title="Help"
+        app:showAsAction="never"/>
+
+
+
+</menu>

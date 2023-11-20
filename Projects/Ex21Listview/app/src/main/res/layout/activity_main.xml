@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:entries="@array/datas"/>
+    <!-- entries 속성을 사용하여  xml로 만든 String배열을 지정하면 -->
+    <!-- 자동으로 아답터(뷰들을 만들어주는 객체)가 만들어져 설정됨   -->
+
+    <!-- 아이템 1개의 뷰 모양을 원하는 모양으로 하고 싶다면..(Text의 색상을 파랑)   -->
+    <!-- entries속성을 사용하지 않고...   -->
+    <!-- 레이아아웃모양을 xml로 미리 설계해 놓고 아답터 객체를 직접 만들어서 리스트뷰에 설정해야 함   -->
+
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listview"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

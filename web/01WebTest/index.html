@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <!-- 1. 화면에 안보이는 영역 설정 -->
+    <head>
+        <title>My Web Page</title>
+        <!-- 기본적으로 한글은 깨짐. 이를 방지하기 위해  -->
+        <meta charset="utf-8">
+
+        <!-- 스타일작업 : CSS -->
+        <!-- <style>
+            /* 이 영역안에서는 CSS언어의 문법 체계를 따름 */
+            h2{background-color: yellow;}
+            p{color: #FF0000;}
+            img{width: 150px;}
+        </style> -->
+
+        <!-- 스타일작업을 별도의 .css 문서에 만들고 적용해보기 -->
+        <!-- 왼쪽의 index.css로 만듬 -->
+        <!-- 적용 -->
+        <link rel="stylesheet" href="./index.css">
+
+        <!-- 동적 동작 코딩을 위한 Javascript 언어 적용 -->
+        <!-- <script>
+            // 이 영역 안에서는 Javascript 언어 문법 체계를 따름
+            
+            // 함수 정의
+            function show(){
+                alert("로그인 버튼 클릭!");    
+            }
+            
+        </script> -->
+
+        <!-- JS문서를 별도의 .js문서로 만들어서 적용해보기 -->
+        <script src="./index.js"></script>
+
+    </head>
+
+    <!-- 2. 주소창 아래 화면에 보이는 영역 -->
+    <body>
+
+        <h2>My First Web Page</h2>
+        <p>This is first web page.</p>
+        <p>한글도 표시됨.</p>
+
+        <img src="./sydney.jpg" id="aa">
+        <button onclick="show()">로그인</button>
+        <button onclick="changeImage()">이미지 변경</button>
+
+
+    </body>
+
+</html>

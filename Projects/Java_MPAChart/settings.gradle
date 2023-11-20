@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+
+        // 메이븐관련된건 컨드롤 끝나기전에 넣기
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+    }
+}
+rootProject.name = "Java_MPAChart"
+include ':app'

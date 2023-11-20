@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cr_01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/thumb_moana"/>
+
+        <TextView
+            android:id="@+id/tv_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android"
+            android:textSize="28sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/cr_01"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hello"
+            android:layout_alignLeft="@+id/tv_hello"
+            android:text="Hello, How are yout today?"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2022.08.26"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana01"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana02"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana03"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana04"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana01"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana02"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana03"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana04"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/moana01"
+            android:layout_margin="5dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana02"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana03"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/moana04"
+                android:layout_margin="5dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#66A8A4A4"
+        />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:id="@+id/tv_relative2_android"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="androidprimeinfo"
+           android:layout_marginLeft="8dp"
+           android:textSize="14sp"
+           android:textColor="@color/black"/>
+
+       <TextView
+           android:id="@+id/tv_metro"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_relative2_android"
+           android:layout_marginLeft="8dp"
+           android:text="Metro Manila, Philippines"
+           android:textColor="@color/black"
+           android:textSize="14sp" />
+
+       <ImageView
+           android:id="@+id/ic_overflow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="5dp"
+           android:src="@drawable/ic_baseline_more_vert_24" />
+
+       <ImageView
+           android:id="@+id/newyork"
+           android:layout_width="wrap_content"
+           android:layout_height="300dp"
+           android:layout_below="@+id/tv_metro"
+           android:src="@drawable/newyork" />
+
+   </RelativeLayout>
+    <!-- TODO : 백터 ...찾기      -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ic_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_favorite_24" />
+
+        <ImageView
+            android:id="@+id/ic_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ic_heart"
+            android:src="@drawable/ic_baseline_mode_comment_24" />
+
+        <ImageView
+            android:id="@+id/ic_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ic_comment"
+            android:src="@drawable/ic_sharp_send_24" />
+
+        <ImageView
+            android:id="@+id/ic_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_baseline_move_to_inbox_24" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#66A8A4A4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write youtr description here.."
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26 MINTUES AGO"
+        android:layout_marginLeft="20dp"/>
+
+
+
+</LinearLayout>

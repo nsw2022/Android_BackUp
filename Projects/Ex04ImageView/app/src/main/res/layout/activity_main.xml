@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/flag_korea"
+        android:scaleType="centerInside"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="australia"/>
+    <Button
+        android:id="@+id/btn02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="belgium"/>
+    <Button
+        android:id="@+id/btn03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="canada"/>
+    <Button
+        android:id="@+id/btn04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="korea"/>
+
+    <!-- 이미지의 가로세로 비율대로 이미지뷰의 사이즈를 조정하는 속성  -->
+    <!-- 이미지뷰의  wrap_content 는 보여지는 이미지의 사이즈를 감싼 사이즈가 아니라   -->
+    <!-- 원본 이미지 사이즈를 감싼 사이즈로 만들어짐. 그러니. 이미지보다 큰 사이즈로 계산될 수 있음.   -->
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flag_australia"
+        android:adjustViewBounds="true"/>
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="랜덤 국기"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iv2의 이미지 국가 읽기"
+        android:backgroundTint="@color/teal_700"/>
+    <TextView
+        android:id="@+id/tv_nation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="대한민국"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center"/>
+
+</LinearLayout>

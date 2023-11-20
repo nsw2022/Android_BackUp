@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 1. 레이아웃뷰와 바인딩될 데이터의 명칭과 클래스를 지정   -->
+    <data>
+        <!-- 이 레이아웃파일안에서 데이터를 가지고 있을 변수를 지정 -->
+        <import type="viewmodel.ItemViewModel"/>
+        <variable
+            name="viewModel"
+            type="viewmodel.ItemViewModel" />
+
+    </data>
+
+    <!-- 2. 레이아웃뷰 : 기존에 root 로 만들었던 뷰  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:inputType="text"
+            android:onTextChanged="@{ (s,start,before,count)-> viewModel.changeName(s.toString())}"/>
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:onTextChanged="@{ (s,start,before,count)-> viewModel.changeEmail(s.toString())}"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save data"
+            android:onClick="@{ (v)-> viewModel.clickedSave() }"/>
+
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="load data"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginTop="80dp"
+            android:onClick="@{ (v)-> viewModel.clickedLoad() }"/>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.model.name}"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+</layout>

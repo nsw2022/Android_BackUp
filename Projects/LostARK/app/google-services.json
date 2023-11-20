@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250877582270",
+    "project_id": "lostarknsw2022",
+    "storage_bucket": "lostarknsw2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250877582270:android:20f441f03bcfda21af37ef",
+        "android_client_info": {
+          "package_name": "com.nsw2022.lostark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250877582270-i3ot7u4ae0id146s59gu2giph1k2jcvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIkE5IXy7DOIho186ptXlLhIJIPnV7C-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250877582270-i3ot7u4ae0id146s59gu2giph1k2jcvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+
+    <ImageView
+        android:id="@+id/iv_strbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/button_start" />
+
+    <ImageView
+        android:id="@+id/iv_ele"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_strbtn"
+        android:src="@drawable/a_ele" />
+
+    <ImageView
+        android:id="@+id/iv_frog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_strbtn"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/a_frog" />
+
+    <ImageView
+        android:id="@+id/iv_pig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_ele"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-34dp"
+        android:src="@drawable/a_pig" />
+
+    <ImageView
+        android:id="@+id/iv_lion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_pig"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/a_lion" />
+
+    <ImageView
+        android:id="@+id/iv_monk"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_pig"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/a_monkey" />
+
+
+    <ImageView
+        android:id="@+id/iv_01"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_ele"/>
+
+    <ImageView
+        android:id="@+id/iv_02"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_frog"/>
+    <ImageView
+        android:id="@+id/iv_03"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_pig"/>
+    <ImageView
+        android:id="@+id/iv_04"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_lion"/>
+
+
+    <ImageView
+        android:id="@+id/iv_05"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/b_monkey"/>
+
+    <ImageView
+        android:id="@+id/iv_good"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/result_good"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_bad"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/result_bad"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_00"
+        android:layout_width="367dp"
+        android:layout_height="261dp"
+        android:layout_below="@+id/iv_monk"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/q_board" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

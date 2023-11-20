@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regist Member Information"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="@color/black"
+                android:layout_margin="8dp"
+                />
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:ems="6"
+                    android:maxLength="6"
+                    android:inputType="text"/>
+
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GEMDER:"
+                android:textSize="11sp"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"/>
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"/>
+
+
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   CITY :"
+                android:textColor="@color/black"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_seoul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEOUL"/>
+            <RadioButton
+                android:id="@+id/rb_busan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUSAN"/>
+
+            <RadioButton
+                android:id="@+id/rb_etc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETC"/>
+
+
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE :"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="3"
+                android:ems="3"/>
+
+            <EditText
+                android:id="@+id/et_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="4"
+                android:ems="3"/>
+
+            <EditText
+                android:id="@+id/et_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="4"
+                android:ems="3"/>
+
+        </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHOICE CONTACT METHOD (MULTIPLE)"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:gravity="center"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/cb_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-MAL"/>
+
+            <CheckBox
+                android:id="@+id/cb_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHONE"/>
+
+            <CheckBox
+                android:id="@+id/cb_vist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIST"/>
+
+            <CheckBox
+                android:id="@+id/cb_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS"/>
+
+
+        </RadioGroup>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REISTRATION"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/purple_500">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#CCBFBF"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

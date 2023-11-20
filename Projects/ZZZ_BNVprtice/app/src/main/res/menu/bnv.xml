@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bnv_home"
+        android:title="홈"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:id="@+id/bnv_member"
+        android:title="멤버십"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+    <item android:id="@+id/bnv_phone"
+        android:title="주문"
+        android:icon="@drawable/ic_baseline_phone_android_24"/>
+
+
+
+</menu>

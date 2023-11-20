@@ -1,0 +1,5 @@
+/* 이 파일안에서는 css언어의 문법 */
+h2{background-color: yellow;}
+p{color: #ff0000;}
+img{width: 150px; display: block;}
+button{margin-top: 16px;}

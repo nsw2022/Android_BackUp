@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nsw2022.ex74alarm">
+    <!-- 알람시계앱을 실행하기 위한 퍼미션 -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" /> <!-- 안드로이드 12 버전부터 알람매니저를 이용ㅇ하여 알람설정시에는 퍼미션 필요 -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!-- 포어그라운드 서비스를 위한 퍼미션 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex74Alarm"
+        tools:targetApi="31">
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 알람 리시버 등록 -->
+        <receiver android:name=".AlarmReceiver" /> <!-- 알람 서비스 등록 -->
+        <service android:name=".AlarmService" />
+    </application>
+
+</manifest>

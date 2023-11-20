@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView inside MainActivity"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change text"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:backgroundTint="#FFFF8800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change text MyFragment"/>
+
+    <!--   별도의 화면을 가진 MyFragment를 배치 : 필수 name, id 속성   -->
+
+    <fragment
+        android:id="@+id/myfragment"
+        android:name="com.nsw2022.ex30fragment.MyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_my"/>
+    <!-- 실무에서는 Fragment를 sml에서 직접 배치하는 방법은 많이 사용되지않음. -->
+    <!-- xml에서 배치하면 추후 제거나 변경 같은 동적 배치작업이 불가능 해짐 -->
+
+
+</LinearLayout>

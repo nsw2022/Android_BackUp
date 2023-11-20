@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:spinnerMode="dropdown"
+      android:background="@drawable/bg_spinner_ic"
+      android:padding="8dp"/>
+
+  <Spinner
+      android:id="@+id/spinner2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:spinnerMode="dropdown"
+      android:background="@drawable/bg_spinner_ic"
+      android:padding="8dp"
+      android:layout_toRightOf="@+id/spinner"
+      android:layout_marginLeft="8dp"/>
+
+  <Button
+      android:id="@+id/btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/spinner"
+      android:text="필터된 주소 확인"
+      android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

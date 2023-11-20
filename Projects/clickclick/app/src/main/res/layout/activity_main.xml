@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg1" />
+
+    <LinearLayout
+        android:id="@+id/gamestart_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <!-- TODO : 클릭하면 사라지게 설정 -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="start 버튼을 눌러주세요"
+            android:textColor="#634848"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="23sp"/>
+
+        <ImageView
+            android:id="@+id/iv_startbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/number_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="숫자를 순서대로 누르세요"
+            android:textColor="#634848"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="26sp"/>
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ing"/>
+        <!-- TODO : 클릭다하면 gone되게 만들기     -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:columnCount="3">
+
+
+            <ImageView
+                android:id="@+id/number_iv1"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+
+                android:src="@drawable/num01"/>
+
+            <ImageView
+                android:id="@+id/number_iv2"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+
+                android:src="@drawable/num02"/>
+
+            <ImageView
+                android:id="@+id/number_iv3"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num03"/>
+
+            <ImageView
+                android:id="@+id/number_iv4"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num04"/>
+
+            <ImageView
+                android:id="@+id/number_iv5"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num05"/>
+
+            <ImageView
+                android:id="@+id/number_iv6"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num06"/>
+
+            <ImageView
+                android:id="@+id/number_iv7"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num07"/>
+
+            <ImageView
+                android:id="@+id/number_iv8"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num08"/>
+
+            <ImageView
+                android:id="@+id/number_iv9"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num09"/>
+
+            <ImageView
+                android:id="@+id/number_iv10"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/num10" />
+            <ImageView
+                android:id="@+id/number_iv11"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num11"/>
+            <ImageView
+                android:id="@+id/number_iv12"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:adjustViewBounds="true"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/num12"/>
+
+
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

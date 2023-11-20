@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="256dp"
+            android:src="@drawable/coffee_0001"
+            android:adjustViewBounds="true"/>
+    </androidx.cardview.widget.CardView>
+    
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/todaycoffe"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_fragment_home_item"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv2"
+        android:text="오늘의 메뉴"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+</RelativeLayout>

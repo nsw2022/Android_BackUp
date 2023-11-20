@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EX02TextView</string>
+    <string name="my_text">Hello android</string>
+</resources>

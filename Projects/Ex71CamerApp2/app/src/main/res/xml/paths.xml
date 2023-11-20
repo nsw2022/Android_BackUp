@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 외부저장소의 앱 고유저장영역 폴더 경로   -->
+    <external-files-path
+        name="external_files"
+        path="."/>
+
+    <!-- 외부저장소의 공용역역 경로 [ 이 예제에서 필요한 경로 ]-->
+    <external-path
+        name="external"
+        path="."/>
+
+    <!-- 내부저장소 영역   -->
+    <files-path
+        name="files"
+        path="."/>
+
+</paths>
